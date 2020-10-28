@@ -1,0 +1,13 @@
+version: 1
+task_definition:
+  task_size:
+    mem_limit: 8192
+  services:
+    web:
+      mem_limit: 1024m
+    prosody:
+      mem_limit: 1024m
+    jicofo:
+      mem_limit: 1024m
+    jvb:
+      mem_limit: 4096m
