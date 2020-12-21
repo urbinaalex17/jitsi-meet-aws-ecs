@@ -1,9 +1,7 @@
 
-<div style=background-color:blue>
 <p align="center">
-  <img src="https://www.dominion-global.com/New-Dominion-theme/images/dominion.png"/>
+  <img src="https://img.s3wfg.com/web/img/images_uploaded/8/c/dominion_logo_620x350.jpg" />
 </p>
-</div>
 
 # Jitsi Meet on Amazon Elastic Container Service
 
