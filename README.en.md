@@ -71,12 +71,28 @@ ecs-cli up --keypair $AWS_KEYPAIR --capability-iam --size $ECS_CLUSTER_SIZE --in
 
 After getting the ECS cluster up and running, the task definition for jitsi meet must be created using the [docker-compose.yml](jitsi-meet/docker-compose.yml) file located in [jitsi-meet](jitsi-meet) directory.
 
+**WARNING: If the task definition is already created and/or manually modified through the AWS Console, executing the following command will overwrite the task definition, leading to lost any previous configuration.**
+
+
 ```bash
 cd jitsi-meet
 ecs-cli compose --file docker-compose.yml create
 ```
+
+Through the AWS Console, go to Elastic Container Services, select the task definition *jitsi-meet*, select the latest revision and create a new one. Edit the container definition of *jicofo, jvb y web* in the Network Settings section and fill out the parameter with the following content:
+
+**prosody:xmpp.meet.jitsi**
+
+Click en *Crear* para guardar la nueva definicion de tarea.
+
+Repeat the last procedure, now for *prosody* container definition with the following content:
+
+**xmpp.meet.jitsi**
+
+Click en *Crear* para guardar la nueva definicion de tarea.
+
+
 ## TODO
-- Container Links
 - Create ECS Service
 - Update Security Group
 - Add SSL Certificate
