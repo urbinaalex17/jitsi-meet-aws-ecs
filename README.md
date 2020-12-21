@@ -1,3 +1,15 @@
+<style>
+    .div-1 {
+        background-color: #2F329F;
+    }
+</style>
+
+<div class="div-1">
+<p align="center">
+  <img src="https://www.dominion-global.com/New-Dominion-theme/images/dominion.png"/>
+</p>
+</div>
+
 # Jitsi Meet on Amazon Elastic Container Service
 
 ![](docs/jitsi-docker.png)
