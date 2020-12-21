@@ -28,7 +28,20 @@ Ya sea que uses una cuenta de servicio de IAM o un usuario de IAM, debes tener l
 
 ### Configurando Elastic Container Service
 
-[Generar una llave](https://docs.aws.amazon.com/es_es/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey) en la consola de AWS y [configurar](https://docs.aws.amazon.com/es_es/AmazonECS/latest/developerguide/ECS_CLI_Configuration.html) ecs-cli para usarla de la siguiente forma:
+[Generar una llave](https://docs.aws.amazon.com/es_es/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey) en la consola de AWS y [configurar](https://docs.aws.amazon.com/es_es/AmazonECS/latest/developerguide/ECS_CLI_Configuration.html) ecs-cli para usarla.
+
+Las siguientes variables de entorno seran configuradas en la shell:
+
+| Nombre | Descripcion | Ejemplo |
+| --- | --- | --- |
+| PROFILE_NAME | Especifica el nombre del perfil a usar | aws |
+| AWS_ACCESS_KEY_ID | Especifica el clave de acceso de AWS a usar | AKIAXKO5CYVQ3XXXXXXX |
+| AWS_SECRET_ACCESS_KEY | Especifica la llave secreta de AWS a usar | KHvshFRp8SstYaou936ZtQD0IaaZXXXXXXXXXXXX |
+| ECS_CLUSTER | Especifica el nombre del cluster ECS a usar | jitsi-cluster |
+| AWS_REGION | Especifica la region  de AWS a usar | eu-west-3 |
+| AWS_KEYPAIR | Especifica el nombre de un par de llaves existentes para habilitar acceso SSH a las instancias EC2 | jitsi-keypair | 
+| AWS_INSTANCE_TYPE | Especifica el tipo de maquina EC2 para las instancias de contenedores | m5.xlarge |
+| ECS_CLUSTER_SIZE | Especifica el numero de instancias a crear y registrar en el cluster | 2 |
 
 Configurar las credenciales en ECS
 ```bash

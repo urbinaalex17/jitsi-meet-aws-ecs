@@ -28,7 +28,21 @@ Whether you use a IAM service account or IAM user it has to have the following p
 
 ### Setting up Elastic Container Service
 
-[Generate a Access Key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey) in the AWS Console and [set up](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI_Configuration.html) the ecs-cli to use it as follows:
+[Generate a Access Key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey) in the AWS Console and [set up](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI_Configuration.html) the ecs-cli to use it.
+
+The following environment variables will be set in the shell:
+
+| Name | Description | Example |
+| --- | --- | --- |
+| PROFILE_NAME | Specifies the profile name to use | aws |
+| AWS_ACCESS_KEY_ID | Specifies the AWS access key to use | AKIAXKO5CYVQ3XXXXXXX |
+| AWS_SECRET_ACCESS_KEY | Specifies the AWS secret key to use | KHvshFRp8SstYaou936ZtQD0IaaZXXXXXXXXXXXX |
+| ECS_CLUSTER | Specifies the ECS cluster name to use | jitsi-cluster |
+| AWS_REGION | Specifies the AWS region to use | eu-west-3 |
+| AWS_KEYPAIR | Specifies the name of an existing key pair to enable SSH access to the EC2 instances | jitsi-keypair | 
+| AWS_INSTANCE_TYPE | Specifies the EC2 instance type for your container instances | m5.xlarge |
+| ECS_CLUSTER_SIZE | Specifies the number of instances to launch and register to the cluster | 2 |
+
 
 Configure ECS Credentials
 ```bash
@@ -40,16 +54,16 @@ ecs-cli configure profile --profile-name $PROFILE_NAME --access-key $AWS_ACCESS_
  
 Configure ECS cluster
 ```bash
-export ECS_CLUSTER=jitsi-ecs
-export AWS_REGION=eu-west-3
+export ECS_CLUSTER=<replace>
+export AWS_REGION=<replace>
 ecs-cli configure --cluster $ECS_CLUSTER --default-launch-type EC2 --region $AWS_REGION --config-name $ECS_CLUSTER
 ```
 
 Create ECS cluster
 ```bash
-export AWS_KEYPAIR=jitsi-ecs
-export AWS_INSTANCE_TYPE=m5.xlarge
-export ECS_CLUSTER_SIZE=1
+export AWS_KEYPAIR=<replace>
+export AWS_INSTANCE_TYPE=<replace>
+export ECS_CLUSTER_SIZE=<replace>
 ecs-cli up --keypair $AWS_KEYPAIR --capability-iam --size $ECS_CLUSTER_SIZE --instance-type $AWS_INSTANCE_TYPE --launch-type EC2
 ```
 
