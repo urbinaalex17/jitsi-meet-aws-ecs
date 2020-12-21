@@ -83,13 +83,13 @@ Through the AWS Console, go to Elastic Container Services, select the task defin
 
 **prosody:xmpp.meet.jitsi**
 
-Click en *Crear* para guardar la nueva definicion de tarea.
+Click on *Create* to save the new task definition.
 
 Repeat the last procedure, now for *prosody* container definition with the following content:
 
 **xmpp.meet.jitsi**
 
-Click en *Crear* para guardar la nueva definicion de tarea.
+Click on *Create* to save the new task definition.
 
 
 ## TODO

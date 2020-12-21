@@ -81,12 +81,12 @@ A traves de la consola de AWS, ir a Elastic Container Service, seleccionar la de
 
 **prosody:xmpp.meet.jitsi**
 
-Click on *Create* to save the new task definition.
+Click en *Crear* para guardar la nueva definicion de tarea.
 
 Editar la definicion del contenedor *prosody* en la seccion Network Settings y colocar en el parametro *links* la siguiente configuracion:
 **xmpp.meet.jitsi**
 
-Click on *Create* to save the new task definition.
+Click en *Crear* para guardar la nueva definicion de tarea.
 
 ## TODO
 - Create ECS Service
