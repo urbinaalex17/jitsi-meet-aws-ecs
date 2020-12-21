@@ -28,8 +28,7 @@ Ya sea que uses una cuenta de servicio de IAM o un usuario de IAM, debes tener l
 
 ### Configurando Elastic Container Service
 
-#### Cluster de ECS
-Generar una llave en la consola de AWS y [configurar](https://docs.aws.amazon.com/es_es/AmazonECS/latest/developerguide/ECS_CLI_Configuration.html) ecs-cli para usarla de la siguiente forma:
+[Generar una llave](https://docs.aws.amazon.com/es_es/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey) en la consola de AWS y [configurar](https://docs.aws.amazon.com/es_es/AmazonECS/latest/developerguide/ECS_CLI_Configuration.html) ecs-cli para usarla de la siguiente forma:
 
 Configurar las credenciales en ECS
 ```bash
