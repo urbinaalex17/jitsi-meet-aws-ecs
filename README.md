@@ -1,10 +1,5 @@
-<style>
-    .div-1 {
-        background-color: #2F329F;
-    }
-</style>
 
-<div class="div-1">
+<div style=background-color:blue>
 <p align="center">
   <img src="https://www.dominion-global.com/New-Dominion-theme/images/dominion.png"/>
 </p>
