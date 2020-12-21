@@ -85,11 +85,15 @@ Through the AWS Console, go to Elastic Container Services, select the task defin
 
 Click on *Create* to save the new task definition.
 
+<img src="docs/aws-network-settings-links-1.png" width="75%" height="75%"/>
+
 Repeat the last procedure, now for *prosody* container definition with the following content:
 
 **xmpp.meet.jitsi**
 
 Click on *Create* to save the new task definition.
+
+<img src="docs/aws-network-settings-links-2.png" width="75%" height="75%"/>
 
 ### Create ECS Service
 
