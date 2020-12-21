@@ -91,9 +91,18 @@ Repeat the last procedure, now for *prosody* container definition with the follo
 
 Click on *Create* to save the new task definition.
 
+### Create ECS Service
+
+Through the AWS Console, go to Elastic Container Service, select the ECS Cluster, in the *Services* tab, click on create a new service and configure it as follows:
+
+- In Lauch Type select *EC2*
+- Fill out Service name with the content *jitsi-meet*
+- Fill out Number of tasks with the content *2*
+- In Task Placement select *One Task per host*
+
+Click on Next Step three times and finally click on *Create Service*
 
 ## TODO
-- Create ECS Service
 - Update Security Group
 - Add SSL Certificate
 - Configure Load Balancer
