@@ -1,11 +1,10 @@
 
 <p align="center">
-  <img src="https://img.s3wfg.com/web/img/images_uploaded/8/c/dominion_logo_620x350.jpg" />
+  <img src="https://img.s3wfg.com/web/img/images_uploaded/8/c/dominion_logo_620x350.jpg" width="30%" height="30%"/>
 </p>
 
 # Jitsi Meet en Amazon Elastic Container Service
-
-![](docs/jitsi-docker.png)
+<img src="docs/jitsi-docker.png" width="25%" height="25%"/>
 
 [Jitsi](https://jitsi.org/) es un conjunto de proyectos de Codigo Abierto que te permite facilmente contruir e instalar soluciones de videoconferencia seguras.
 
@@ -82,6 +81,8 @@ A traves de la consola de AWS, ir a Elastic Container Service, seleccionar la de
 **prosody:xmpp.meet.jitsi**
 
 Click en *Crear* para guardar la nueva definicion de tarea.
+
+![](docs/aws)
 
 Editar la definicion del contenedor *prosody* en la seccion Network Settings y colocar en el parametro *links* la siguiente configuracion:
 **xmpp.meet.jitsi**

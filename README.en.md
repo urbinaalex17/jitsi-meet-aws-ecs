@@ -1,11 +1,11 @@
 
 <p align="center">
-  <img src="https://img.s3wfg.com/web/img/images_uploaded/8/c/dominion_logo_620x350.jpg" />
+  <img src="https://img.s3wfg.com/web/img/images_uploaded/8/c/dominion_logo_620x350.jpg" width="30%" height="30%"/>
 </p>
 
 # Jitsi Meet on Amazon Elastic Container Service
 
-![](docs/jitsi-docker.png)
+<img src="docs/jitsi-docker.png" width="25%" height="25%"/>
 
 [Jitsi](https://jitsi.org/) is a set of Open Source projects that allows you to easily build and deploy secure videoconferencing solutions.
 
