@@ -106,6 +106,8 @@ Through the AWS Console, go to Elastic Container Service, select the ECS Cluster
 
 Click on Next Step three times and finally click on *Create Service*
 
+<img src="docs/aws-create-ecs-service.gif" width="75%" height="75%"/>
+
 ## TODO
 - Update Security Group
 - Add SSL Certificate
