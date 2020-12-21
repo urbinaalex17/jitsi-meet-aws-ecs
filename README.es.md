@@ -66,9 +66,12 @@ export ECS_CLUSTER_SIZE=1
 ecs-cli up --keypair $AWS_KEYPAIR --capability-iam --size $ECS_CLUSTER_SIZE --instance-type $AWS_INSTANCE_TYPE --launch-type EC2
 ```
 
-#### Definicion de tareas ECS
+### Definicion de tareas ECS
+
+Despues de tener el cluster ECS arriba y corriendo, la definicion de tarea para jitsi meet debe ser creada usando el archivo [docker-compose.yml](jitsi-meet/docker-compose.yml) localizado en el directorio [jitsi-meet](jitsi-meet).
 
 ```bash
+cd jitsi-meet
 ecs-cli compose --file docker-compose.yml create
 ```
 ## TODO
