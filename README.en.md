@@ -28,7 +28,7 @@ Whether you use a IAM service account or IAM user it has to have the following p
 
 ### Setting up Elastic Container Service
 
-[Generate a Access Key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey) in the AWS Console and [set up](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI_Configuration.html) the ecs-cli to use it.
+[Generate an access key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey) in the AWS Console and [set up](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI_Configuration.html) the ecs-cli to use it.
 
 The following environment variables will be set in the shell:
 

@@ -7,7 +7,7 @@
 
 ![](docs/jitsi-docker.png)
 
-[Jitsi](https://jitsi.org/) es un conjunto de projectos de Codigo Abierto que te permite facilmente contruir e instalar soluciones de videoconferencia seguras.
+[Jitsi](https://jitsi.org/) es un conjunto de proyectos de Codigo Abierto que te permite facilmente contruir e instalar soluciones de videoconferencia seguras.
 
 [Jitsi Meet](https://jitsi.org/jitsi-meet/) es una solucion de video conferencia totalmente encriptada y 100% de codigo abierto que puedes usar todo el dia, todos los dias, gratis sin necesidad de una cuenta.
 
@@ -28,7 +28,7 @@ Ya sea que uses una cuenta de servicio de IAM o un usuario de IAM, debes tener l
 
 ### Configurando Elastic Container Service
 
-[Generar una llave](https://docs.aws.amazon.com/es_es/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey) en la consola de AWS y [configurar](https://docs.aws.amazon.com/es_es/AmazonECS/latest/developerguide/ECS_CLI_Configuration.html) ecs-cli para usarla.
+[Generar una llave de acceso](https://docs.aws.amazon.com/es_es/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey) en la consola de AWS y [configurar](https://docs.aws.amazon.com/es_es/AmazonECS/latest/developerguide/ECS_CLI_Configuration.html) ecs-cli para usarla.
 
 Las siguientes variables de entorno seran configuradas en la shell:
 
