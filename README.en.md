@@ -13,6 +13,10 @@
 
 This repository contains the necessary tools to run a Jitsi Meet stack on [Docker](https://www.docker.com) using [Docker Compose](https://docs.docker.com/compose/), as well as the instructions needed to deployment the stack in [Amazon Elastic Container Services](https://aws.amazon.com/ecs/)
 
+The following high-level design architecture diagran depicts the services, containers and ports exposed by Jitsi on ECS:
+
+<img src="docs/aws-ecs-jitsi-architecture.png" width="75%" height="75%"/>
+
 ## Getting Started
 
 ### Prerequisites

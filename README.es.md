@@ -4,6 +4,7 @@
 </p>
 
 # Jitsi Meet en Amazon Elastic Container Service
+
 <img src="docs/jitsi-docker.png" width="25%" height="25%"/>
 
 [Jitsi](https://jitsi.org/) es un conjunto de proyectos de Codigo Abierto que te permite facilmente contruir e instalar soluciones de videoconferencia seguras.
@@ -11,6 +12,10 @@
 [Jitsi Meet](https://jitsi.org/jitsi-meet/) es una solucion de video conferencia totalmente encriptada y 100% de codigo abierto que puedes usar todo el dia, todos los dias, gratis sin necesidad de una cuenta.
 
 Este repositorio contiene los archivos necesarios para correr un stack de Jitsi Meet en [Docker](https://www.docker.com) usando [Docker Compose](https://docs.docker.com/compose/) asi como tambien las instrucciones para correr el stack en [Amazon Elastic Container Services](https://aws.amazon.com/es/ecs/)
+
+El siguiente diagrama de arquitectura de alto nivel muestra los servicios, contenedores y los puertos expuestos de Jitsi en ECS.
+
+<img src="docs/aws-ecs-jitsi-architecture.png" width="75%" height="75%"/>
 
 ## Primeros pasos
 
