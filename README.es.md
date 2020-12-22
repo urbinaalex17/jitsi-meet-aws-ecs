@@ -107,7 +107,22 @@ Click en Next Step tres veces y finalmente click en *Create Service*
 
 <img src="docs/aws-create-ecs-service.gif" width="75%" height="75%"/>
 
+### Actualizar el Security Group por defecto de ECS
+
+Los siguientes puertos deben estar abiertos en el security group por defecto de ECS:
+
+| Type | Protocol | Port Range |
+| --- | --- | --- |
+| HTTP | TCP | 80 |
+| Custom TCP | TCP | 8080 | 
+| Custom TCP | TCP | 8000 |
+| Custom TCP | TCP | 8443 |
+| Custom UDP | UDP | 10000 |
+
+Seleccion el ECS cluster, en la pestaña ECS Instance, click en cualquier instancia ECS, seleciona la instancia ECS nuevamente, en la pestaña de seguridad, click en Security Group para editar las reglas de ingreso. 
+
+<img src="docs/aws-update-default-ecs-sg.gif" width="75%" height="75%"/>
+
 ## TODO
-- Update Security Group
 - Add SSL Certificate
 - Configure Load Balancer

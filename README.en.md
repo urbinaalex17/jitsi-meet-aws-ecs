@@ -109,7 +109,22 @@ Click on Next Step three times and finally click on *Create Service*
 
 <img src="docs/aws-create-ecs-service.gif" width="75%" height="75%"/>
 
+### Update default ECS Security Group
+
+The following ports must be open in the default security group:
+
+| Type | Protocol | Port Range |
+| --- | --- | --- |
+| HTTP | TCP | 80 |
+| Custom TCP | TCP | 8080 | 
+| Custom TCP | TCP | 8000 |
+| Custom TCP | TCP | 8443 |
+| Custom UDP | UDP | 10000 |
+
+Select the ECS cluster, in the ECS Instance tab, click on any ECS Instance, select the EC2 instance again, in the security tab, click on the security group to edit the inbound rules.
+
+<img src="docs/aws-update-default-ecs-sg.gif" width="75%" height="75%"/>
+
 ## TODO
-- Update Security Group
 - Add SSL Certificate
 - Configure Load Balancer
