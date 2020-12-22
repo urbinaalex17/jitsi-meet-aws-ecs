@@ -128,6 +128,16 @@ Seleccion el ECS cluster, en la pestaña ECS Instance, click en cualquier instan
 
 <img src="docs/aws-update-default-ecs-sg.gif" width="75%" height="75%"/>
 
-## TODO
-- Add SSL Certificate
-- Configure Load Balancer
+### Configurar un Application Load Balancer con SSL
+
+- Listeners: Agregar HTTP (Secure HTTP) listener 
+- VPC: Seleccionar la VPC creada para el ECS Cluster y selecionar ambas Availability Zones
+- Subir el certificado o selecionar desde ACM.
+- Security group: agregar puerto 443 y 80
+- Target: 
+    - Protocolo: HTTPS
+    - Port: 8443
+        - Health check: 
+            - Protocol: HTTPS
+            - Path: /
+- Registrar Target: Seleccionar una instancia del ECS Cluster
