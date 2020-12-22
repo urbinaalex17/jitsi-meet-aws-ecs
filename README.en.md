@@ -73,9 +73,10 @@ After getting the ECS cluster up and running, the task definition for jitsi meet
 
 **WARNING: If the task definition is already created and/or manually modified through the AWS Console, executing the following command will overwrite the task definition, leading to lost any previous configuration.**
 
-
 ```bash
 cd jitsi-meet
+cp env.example .env
+./gen-passwords.sh
 ecs-cli compose --file docker-compose.yml create
 ```
 
@@ -101,7 +102,7 @@ Through the AWS Console, go to Elastic Container Service, select the ECS Cluster
 
 - In Lauch Type select *EC2*
 - Fill out Service name with the content *jitsi-meet*
-- Fill out Number of tasks with the content *2*
+- Fill out Number of tasks with the content *2* (It should be the same number as defined in ECS_CLUSTER_SIZE)
 - In Task Placement select *One Task per host*
 
 Click on Next Step three times and finally click on *Create Service*
