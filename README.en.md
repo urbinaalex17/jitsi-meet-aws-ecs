@@ -15,7 +15,7 @@ This repository contains the necessary tools to run a Jitsi Meet stack on [Docke
 
 The following high-level design architecture diagran depicts the services, containers and ports exposed by Jitsi on ECS:
 
-<img src="docs/aws-ecs-jitsi-architecture.png" width="75%" height="75%"/>
+<img src="docs/aws-ecs-jitsi-architecture.png" width="90%" height="90%"/>
 
 ## Getting Started
 

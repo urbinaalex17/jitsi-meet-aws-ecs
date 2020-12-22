@@ -15,7 +15,7 @@ Este repositorio contiene los archivos necesarios para correr un stack de Jitsi 
 
 El siguiente diagrama de arquitectura de alto nivel muestra los servicios, contenedores y los puertos expuestos de Jitsi en ECS.
 
-<img src="docs/aws-ecs-jitsi-architecture.png" width="75%" height="75%"/>
+<img src="docs/aws-ecs-jitsi-architecture.png" width="90%" height="90%"/>
 
 ## Primeros pasos
 
