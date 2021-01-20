@@ -3,7 +3,6 @@ version: '3'
 services:
     # Frontend
     web:
-        image: jitsi/web:stable-5142
         build:
           context: web
         restart: ${RESTART_POLICY}
