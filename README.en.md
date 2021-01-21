@@ -84,7 +84,7 @@ cp env.example .env
 ecs-cli compose --file docker-compose.yml create
 ```
 
-Through the AWS Console, go to Elastic Container Services, select the task definition *jitsi-meet*, select the latest revision and create a new one. Edit the container definition of *jicofo, jvb y web* in the Network Settings section and fill out the parameter with the following content:
+Through the AWS Console, go to Elastic Container Services, select the task definition *jitsi-meet*, select the latest revision and create a new one. Edit the container definition of *jicofo, jvb y web* in the Network Settings section and fill out the *Links* parameter with the following content:
 
 **prosody:xmpp.meet.jitsi**
 
@@ -92,7 +92,7 @@ Click on *Create* to save the new task definition.
 
 <img src="docs/aws-network-settings-links-1.png" width="75%" height="75%"/>
 
-Repeat the last procedure, now for *prosody* container definition with the following content:
+Repeat the last procedure, now for *prosody* container definition but in the *Hostname* parameter with the following content:
 
 **xmpp.meet.jitsi**
 

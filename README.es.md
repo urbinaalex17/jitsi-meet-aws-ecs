@@ -91,7 +91,7 @@ Click en *Crear* para guardar la nueva definicion de tarea.
 
 <img src="docs/aws-network-settings-links-1.png" width="75%" height="75%"/>
 
-Repetir el ultimo procedimiento, ahora para la definicion de container *prosody* con la siguiente configuracion:
+Repetir el ultimo procedimiento, ahora para la definicion de container *prosody* pero ahora en el parametro *Hostname* la siguiente configuracion:
 
 **xmpp.meet.jitsi**
 
