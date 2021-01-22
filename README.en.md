@@ -84,6 +84,13 @@ cp env.example .env
 ecs-cli compose --file docker-compose.yml create
 ```
 
+Change the following environment variables according to the environment being deployed: 
+
+| Variable | PRE | PROD |
+| --- | --- | --- |
+| JICOFO_RESERVATION_REST_BASE_URL | https://lexbox-test-apigwlex.lefebvre.es/api/v1/con | https://lexbox-apigwlex.lefebvre.es/api/v1/con |
+
+
 Through the AWS Console, go to Elastic Container Services, select the task definition *jitsi-meet*, select the latest revision and create a new one. Edit the container definition of *jicofo, jvb y web* in the Network Settings section and fill out the *Links* parameter with the following content:
 
 **prosody:xmpp.meet.jitsi**
