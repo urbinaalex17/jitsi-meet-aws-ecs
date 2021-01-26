@@ -140,10 +140,27 @@ Seleccion el ECS cluster, en la pestaña ECS Instance, click en cualquier instan
 - VPC: Seleccionar la VPC creada para el ECS Cluster y selecionar ambas Availability Zones
 - Subir el certificado o selecionar desde ACM.
 - Security group: agregar puerto 443 y 80
-- Target: 
+- Target: jitsi-https
     - Protocolo: HTTPS
     - Port: 8443
         - Health check: 
             - Protocol: HTTPS
             - Path: /
 - Registrar Target: Seleccionar una instancia del ECS Cluster
+
+La siguiente configuracion es para habilitar el endpoint de estadisticas de colibri en el Load Balancer
+
+- Listeners: Agregar HTTP
+- VPC: Seleccionar la VPC creada para el ECS Cluster y selecionar ambas Availability Zones
+- Target: jitsi-api
+    - Protocolo: HTTP
+    - Port: 8080
+        - Health check: 
+            - Protocol: HTTP
+            - Path: /colibri/stats
+- Registrar Target: Seleccionar una instancia del ECS Cluster
+
+Configurar las reglas del listener HTTP de la siguiente forma:
+
+1 - If Path is /colibri/* then, forward to target jitsi-api
+2 - If Request otherwise not routed then, forward to jitsi-https
