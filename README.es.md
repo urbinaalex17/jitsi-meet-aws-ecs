@@ -162,5 +162,5 @@ La siguiente configuracion es para habilitar el endpoint de estadisticas de coli
 
 Configurar las reglas del listener HTTP de la siguiente forma:
 
-1 - If Path is /colibri/* then, forward to target jitsi-api
+1 - If Path is /colibri/* then, forward to target jitsi-api.  
 2 - If Request otherwise not routed then, forward to jitsi-https

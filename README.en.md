@@ -164,5 +164,5 @@ The following configuration is to enable colibri stats endpoint in the Applicati
 
 Configure the HTTP Listener rules as follows:
 
-1 - If Path is /colibri/* then, forward to target jitsi-api
-2 - If Request otherwise not routed then, forward to jitsi-https
+1 - If Path is /colibri/* then, forward to target jitsi-api.  
+2 - If Request otherwise not routed then, forward to jitsi-https.
